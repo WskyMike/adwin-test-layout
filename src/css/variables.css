@@ -1,0 +1,46 @@
+:root {
+  /* Типография */
+  --font-family-base: 'Inter', sans-serif;
+  --font-family-jura: 'Jura', sans-serif;
+  --font-size-base: 16px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --font-weight-supabold: 700;
+
+  /* Основные цвета */
+  --color-yellow: #eab308;
+  --color-yellow-hover: #fec71c;
+  --color-yellow-pressed: #cc9500;
+
+  --color-blue: #2581eb;
+  --color-blue-hover: #439fff;
+  --color-blue-pressed: #0763cd;
+
+  --color-text: #1f2937;
+  --color-text-hero: #1e1e1e;
+
+  --color-white: #ffffff;
+  --color-background: #ffffff;
+  --color-border: #e2e8f0;
+
+  /* Размеры */
+  --container-max-width: 1280px;
+  --container-padding: 16px;
+
+  /* Кнопки */
+  --button-padding: 10px 12px;
+  --button-border-radius: 8px;
+  --button-transition: all 0.2s ease;
+
+  /* Иконки */
+  --icon-size: 24px;
+  --icon-padding: 10px;
+  --icon-border-radius: 4px;
+
+  /* Эффекты */
+  --transition-base: all 0.2s ease;
+
+  /* Анимации */
+  --animation-duration: 0.2s;
+}

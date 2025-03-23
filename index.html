@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuckShop - Магазин резиновых уточек</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <svg style="display: none">
+      <symbol
+        id="arrow-icon"
+        viewBox="0 0 14 12"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.33.75c.27-.31.75-.34 1.06-.07l5.36 4.75c.16.14.25.35.25.57 0 .22-.09.42-.25.57L8.39 11.31c-.31.27-.79.24-1.06-.05C7.06 10.94 7.08 10.47 7.39 10.19L11.28 6.75H.75C.34 6.75 0 6.41 0 6c0-.41.34-.75.75-.75h10.53L7.39 1.81C7.08 1.53 7.06 1.06 7.33.75z"
+        />
+      </symbol>
+    </svg>
+  </head>
+
+  <body class="page">
+    <!-- Блок header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="logo__icon">
+            <img src="./src/assets/imgs/Logo.svg" alt="DuckShop logo" />
+          </a>
+          <!-- Блок navigation -->
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--active">
+                <a href="#" class="navigation__link">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__link dropdown-toggle" aria-expanded="false">
+                  Каталог
+                  <svg class="dropdown-toggle-img" viewBox="0 0 24 24" width="20" height="20">
+                    <path
+                      fill="currentColor"
+                      d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Блог</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Отзывы</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Блок header actions -->
+          <div class="header__actions">
+            <button class="header__cart" aria-label="Открыть корзину"></button>
+            <button class="button button--primary header__cta modal-open">
+              Заказать обратный звонок
+            </button>
+            <button class="header__nav-burger" aria-label="Открыть мобильное меню"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Всплывающее меню -->
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__overlay"></div>
+        <div class="mobile-menu__content">
+          <div class="mobile-menu__header">
+            <a href="/" class="mobile-menu__logo">
+              <img src="./src/assets/imgs/Logo.svg" alt="DuckShop logo" />
+            </a>
+            <button class="mobile-menu__close" aria-label="Закрыть меню"></button>
+          </div>
+          <nav class="mobile-menu__nav">
+            <ul class="navigation__list navigation__list--mobile">
+              <li class="navigation__item navigation__item--active">
+                <a href="#" class="navigation__link">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Каталог</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Блог</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Отзывы</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button button--primary mobile-menu__cta modal-open">
+            Заказать обратный звонок
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Блок hero -->
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h1 class="hero__title">
+                <span class="hero__title-start">МНОГО</span>
+                <span class="hero__title-end">УТОЧЕК</span>
+              </h1>
+              <div class="hero__content-wrapper">
+                <h2 class="hero__text">
+                  Маленький друг найдётся для каждого<br />в этом крякяенно жёлтом мире
+                </h2>
+                <button class="button button--secondary">Смотреть уточек</button>
+              </div>
+            </div>
+            <div class="hero__image-wrapper">
+              <img src="./src/assets/imgs/krya.svg" class="hero__badge" />
+              <img src="./src/assets/imgs/bigduck.png" alt="Резиновая уточка" class="hero__image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Блок categories -->
+      <section class="categories">
+        <div class="container">
+          <ul class="categories__list">
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                <span class="categories__arrow">
+                  <svg width="14" height="12">
+                    <use xlink:href="#arrow-icon"></use>
+                  </svg>
+                </span>
+                <span class="categories__text">Классические</span>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__link">
+                <span class="categories__arrow">
+                  <svg width="14" height="12">
+                    <use xlink:href="#arrow-icon"></use>
+                  </svg>
+                </span>
+                <span class="categories__text">Уточки панки</span>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__link">
+                <span class="categories__arrow">
+                  <svg width="14" height="12">
+                    <use xlink:href="#arrow-icon"></use>
+                  </svg>
+                </span>
+                <span class="categories__text">Супергерои</span>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__link">
+                <span class="categories__arrow">
+                  <svg width="14" height="12">
+                    <use xlink:href="#arrow-icon"></use>
+                  </svg>
+                </span>
+                <span class="categories__text">Милые</span>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__link">
+                <span class="categories__arrow">
+                  <svg width="14" height="12">
+                    <use xlink:href="#arrow-icon"></use>
+                  </svg>
+                </span>
+                <span class="categories__text">Для детей</span>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__link">
+                <span class="categories__arrow">
+                  <svg width="14" height="12">
+                    <use xlink:href="#arrow-icon"></use>
+                  </svg>
+                </span>
+                <span class="categories__text">Взрослым</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+        <form class="modal__form">
+          <label for="name" class="modal__label modal__label--required">Имя</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="modal__input"
+            placeholder="Введите ваше имя"
+            required
+          />
+
+          <label for="phone" class="modal__label modal__label--required">Телефон</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="modal__input"
+            placeholder="+7 000 000 00 00"
+            required
+          />
+
+          <button type="submit" class="button button--primary modal__submit">Отправить</button>
+
+          <p class="modal__note">
+            Нажимая кнопку "Отправить", вы соглашаетесь с
+            <a href="#" class="modal__link">политикой конфиденциальности</a>
+            и
+            <a href="#" class="modal__link">договором оферты</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

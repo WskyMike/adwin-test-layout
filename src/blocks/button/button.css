@@ -1,0 +1,84 @@
+/* src/blocks/button/button.css */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--button-transition);
+  border: none;
+  z-index: 99;
+}
+
+.button--primary {
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+}
+
+.button--primary:hover {
+  background-color: var(--color-yellow-hover);
+}
+
+.button--primary:active {
+  background-color: var(--color-yellow-pressed);
+}
+
+.button--secondary {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  max-width: 156px;
+}
+
+.button--secondary:hover {
+  background-color: var(--color-blue-hover);
+}
+
+.button--secondary:active {
+  background-color: var(--color-blue-pressed);
+}
+
+/* Иконки */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  padding: var(--icon-padding);
+  border-radius: var(--icon-border-radius);
+  cursor: pointer;
+  transition: var(--button-transition);
+}
+
+.icon--primary {
+  background-color: var(--color-yellow);
+  color: var(--color-text);
+}
+
+.icon--primary:hover {
+  background-color: var(--color-yellow-hover);
+}
+
+.icon--primary:active {
+  background-color: var(--color-yellow-pressed);
+}
+
+.icon--outline {
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.icon--outline:hover {
+  background-color: var(--color-border);
+}
+
+.icon--outline:active {
+  background-color: var(--color-border);
+  transform: scale(0.98);
+}

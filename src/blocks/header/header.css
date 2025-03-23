@@ -1,0 +1,98 @@
+.header {
+  padding: 16px 0 0 0;
+  background-color: var(--color-background);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__cart {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-image: url('../../assets/imgs/shopping-basket.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: background-image var(--animation-duration) ease;
+}
+
+.header__cart:hover {
+  background-image: url('../../assets/imgs/basket-hover.svg');
+  width: 40px;
+  height: 40px;
+}
+
+.header__cart:active {
+  background-image: url('../../assets/imgs/basket-pressed.svg');
+  width: 40px;
+  height: 40px;
+}
+
+.header__nav-burger {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .header__actions {
+    gap: 15px;
+  }
+
+  .header__nav-burger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-image: url('../../assets/imgs/Nav.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: background-image var(--animation-duration) ease;
+  }
+
+  .header__nav-burger:hover {
+    background-image: url('../../assets/imgs/Nav_hover.svg');
+    width: 42px;
+    height: 42px;
+  }
+
+  .header__nav-burger:active {
+    background-image: url('../../assets/imgs/Nav_pressed.svg');
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 670px) {
+  .header__cta {
+    display: none !important;
+  }
+}
+
+@media (max-width: 475px) {
+  .header {
+    padding: 5px 0 0 0;
+  }
+
+  .header__actions {
+    gap: 10px;
+  }
+}
